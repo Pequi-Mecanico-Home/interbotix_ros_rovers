@@ -157,9 +157,10 @@
     </inertial>
   </link>
 
-  <gazebo reference="wheel_left_link">
-    <mu1>1.0</mu1>
-    <mu2>1.0</mu2>
+  <gazebo reference="${robot_name}/wheel_left_link">
+    <!-- This friction pamareter don't contain reliable data!! -->
+    <mu1>100000.0</mu1>
+    <mu2>100000.0</mu2>
     <kp>1000000.0</kp>
     <kd>100.0</kd>
     <minDepth>0.001</minDepth>
@@ -224,9 +225,10 @@
     </inertial>
   </link>
 
-  <gazebo reference="wheel_right_link">
-    <mu1>1.0</mu1>
-    <mu2>1.0</mu2>
+  <gazebo reference="${robot_name}/wheel_right_link">
+    <!-- This friction pamareter don't contain reliable data!! -->
+    <mu1>100000.0</mu1>
+    <mu2>100000.0</mu2>
     <kp>1000000.0</kp>
     <kd>100.0</kd>
     <minDepth>0.001</minDepth>
@@ -268,9 +270,9 @@
     </inertial>
   </link>
 
-  <gazebo reference="caster_front_link">
-    <mu1>0.0</mu1>
-    <mu2>0.0</mu2>
+  <gazebo reference="${robot_name}/caster_front_link">
+    <mu1>1.0</mu1>
+    <mu2>1.0</mu2>
     <kp>1000000.0</kp>
     <kd>100.0</kd>
     <minDepth>0.001</minDepth>
@@ -312,9 +314,9 @@
     </inertial>
   </link>
 
-  <gazebo reference="caster_back_link">
-    <mu1>0.0</mu1>
-    <mu2>0.0</mu2>
+  <gazebo reference="${robot_name}/caster_back_link">
+    <mu1>1.0</mu1>
+    <mu2>1.0</mu2>
     <kp>1000000.0</kp>
     <kd>100.0</kd>
     <minDepth>0.001</minDepth>

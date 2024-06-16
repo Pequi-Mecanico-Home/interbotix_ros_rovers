@@ -243,7 +243,7 @@
           <depthImageTopicName>aligned_depth_to_color/image_raw</depthImageTopicName>
           <depthImageCameraInfoTopicName>aligned_depth_to_color/camera_info</depthImageCameraInfoTopicName>
           <pointCloudTopicName>depth_registered/points</pointCloudTopicName>
-          <frameName>${robot_name}/camera_depth_link</frameName>
+          <frame_name>${robot_name}/camera_depth_link</frame_name>
           <pointCloudCutoff>0.01</pointCloudCutoff>
           <pointCloudCutoffMax>10</pointCloudCutoffMax>
           <distortionK1>0.00000001</distortionK1>
