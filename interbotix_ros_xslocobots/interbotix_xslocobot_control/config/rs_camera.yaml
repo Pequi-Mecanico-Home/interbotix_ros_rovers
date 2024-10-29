@@ -5,7 +5,7 @@ $(var robot_name):
         enable: $(var rs_camera_align_depth)
       base_frame_id: $(var robot_name)_link
       depth_module:
-        profile: $(var rs_depth_module_profile)
+        depth_profile: $(var rs_depth_module_profile)
       enable_color: true
       enable_depth: true
       enable_infra1: false
@@ -17,7 +17,7 @@ $(var robot_name):
       pointcloud:
         ordered_pc: false
       rgb_camera:
-        profile: $(var rs_rbg_camera_profile)
+        color_profile: $(var rs_rbg_camera_profile)
       spatial_filter:
         enable: false
       temporal_filter:
